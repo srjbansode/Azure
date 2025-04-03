@@ -1,0 +1,40 @@
+{
+	"name": "creditcard",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Credit",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"credit": {
+				"type": "String",
+				"defaultValue": "credit"
+			},
+			"Creditfile": {
+				"type": "String",
+				"defaultValue": "Creditfile"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().Creditfile",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().credit",
+					"type": "Expression"
+				},
+				"fileSystem": "creditcard"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

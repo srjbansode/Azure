@@ -1,0 +1,21 @@
+{
+	"name": "DESKTOPBQ41D3R",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "DESKTOP-BQ41D3R",
+			"database": "Flask",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "Suraj",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmYTcxYTdhYS0zMjdlLTRlZjQtOGI4Yy1kOTg5NzVmZGE0OTAiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "onpremtocloud",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
