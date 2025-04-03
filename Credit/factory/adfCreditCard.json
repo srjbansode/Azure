@@ -1,0 +1,9 @@
+{
+	"name": "adfCreditCard",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1f19e0a5-4a7d-4ed7-87a1-75be9a2882ad",
+		"tenantId": "35cabf60-69bc-415e-a545-f8f7f83872d4"
+	}
+}
